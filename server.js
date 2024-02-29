@@ -54,7 +54,7 @@ const cronJob = async () => {
   });
 };
 // scheduled the job  to run every day at 8 am
-cronJob();
+// cronJob();
 
 server.use("/admin", adminRoutes);
 
