@@ -108,6 +108,8 @@ bot.on("text", async (msg) => {
 
 main()
   .then(() => {
-    server.listen(process.env.PORT, console.log("listening to port 5000"));
+    server.listen(process.env.PORT || 5000, console.log("listening to port 5000"));
   })
   .catch((err) => console.log(err));
+
+  

@@ -14,7 +14,7 @@ exports.getUsers = async (req, res) => {
 exports.postKey = async (req, res) => {
    try {
      const { apiKey } = req.body;
-    console.log(apiKey);
+   // console.log(apiKey);
      // Check if the API key already exists
      const existingKey = await Keys.findOne({ apiKey });
 
